@@ -5,7 +5,8 @@ import { SignupComponent } from './components/signup/signup.component';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HomeComponent } from './components/home/home.component';
 import { ErrorComponent } from './components/error/error.component';
-
+import { MessagesModule } from 'primeng/messages';
+import { ToastModule } from 'primeng/toast';
 
 
 @NgModule({
@@ -18,7 +19,9 @@ import { ErrorComponent } from './components/error/error.component';
   imports: [
     CommonModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MessagesModule,
+    ToastModule
   ],
   exports: [
     LoginComponent,

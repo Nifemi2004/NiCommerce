@@ -19,7 +19,14 @@ h2 span{
     width: 100%;
   }
 
+  .errorMessage{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
   .container {
+    position: relative;
     width: 600px;
     margin: 0 auto;
     padding: 20px;

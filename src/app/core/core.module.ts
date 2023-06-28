@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ErrorComponent } from './components/error/error.component';
 import { MessagesModule } from 'primeng/messages';
 import { ToastModule } from 'primeng/toast';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -14,14 +15,15 @@ import { ToastModule } from 'primeng/toast';
     LoginComponent,
     SignupComponent,
     HomeComponent,
-    ErrorComponent
+    ErrorComponent,
   ],
   imports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
     MessagesModule,
-    ToastModule
+    ToastModule,
+    SharedModule
   ],
   exports: [
     LoginComponent,

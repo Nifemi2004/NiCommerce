@@ -1,0 +1,19 @@
+<div class="navbar">
+  <div class="logoContainer">
+    <img class="logo" src="../../../../assets/homelogo.png" alt="" />
+  </div>
+  <div class="search-bar">
+    <input
+      type="text"
+      placeholder="Search"
+      [(ngModel)]="searchQuery"
+      (keyup)="search()"
+    />
+    <app-button variation="secondary" label="Search" (clicked)="search()" />
+   </div>
+  <div class="icons">
+    <div> <img class="heart" src="../../../../assets/heart.png" alt=""> </div>
+    <div> <img class="cart" src="../../../../assets/shoppingcart.png" alt=""> </div>
+    <div>Login Button</div>
+  </div>
+</div>

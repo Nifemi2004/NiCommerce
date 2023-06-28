@@ -8,7 +8,7 @@
  }
 
  .primary{
-  background-color: #4CAF50;
+  background-color: #009A6C;
   color: #ffffff;
   border: none;
   border-radius: 4px;
@@ -19,20 +19,20 @@
  .secondary{
    background-color: #fff;
    border-radius: 4px;
-   color: #4CAF50;
+   color: #009A6C;
    border: none;
  }
 
  .outline{
   border-radius: 4px;
-  color: #4CAF50;
-  border-color: #4CAF50;
+  color: #009A6C;
+  border-color: #009A6C;
   background-color: #ffffff;
  }
 
  .button:hover {
    background-color: #45a049;
-   color: black;
+   color: white;
  }
  
  .button:active {

@@ -9,11 +9,13 @@
       [(ngModel)]="searchQuery"
       (keyup)="search()"
     />
-    <app-button variation="secondary" label="Search" (clicked)="search()" />
-   </div>
+    <app-button variation="primary" label="Search" (clicked)="search()" />
+  </div>
   <div class="icons">
-    <div> <img class="heart" src="../../../../assets/heart.png" alt=""> </div>
-    <div> <img class="cart" src="../../../../assets/shoppingcart.png" alt=""> </div>
-    <div>Login Button</div>
+    <div><i class="pi pi-heart-fill icon"></i></div>
+    <div><i class="pi pi-shopping-cart icon"></i></div>
+    <div>
+      <app-button width="120px" variation="primary" label="Login"></app-button>
+    </div>
   </div>
 </div>

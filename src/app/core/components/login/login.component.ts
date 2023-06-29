@@ -36,7 +36,14 @@ export class LoginComponent {
     this.authService.loginUser(this.logInForm.value).subscribe(
       (response) => {
         console.log(response);
-        this.router.navigate(['/home']);
+        if(response.role === "admin"){
+          this.router.navigate(['/addAdmin']);
+        }else{
+          this.router.navigate(['/home']);
+        }
+
+
+      
       },
       (error) => {
         if(error.status === 401){
